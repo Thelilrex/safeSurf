@@ -3,9 +3,13 @@
   "name": "SafeSurf",
   "version": "1.0.0",
   "description": "An extension to keep children safe from innapropriate content",
-  "action": {
-    "default_popup": "html/safeSurf.html",
-    "default_icon": "icons/itachi.png"
-  },
-  "permissions": ["tabs"]
+  "content_scripts": [
+    {
+      "default_icon": "icons/itachi.png",
+      "js": ["js/popup.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["webRequest", "tabs"],
+  "host_permissions": ["<all_urls>"]
 }
