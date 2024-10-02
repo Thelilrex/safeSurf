@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "SafeSurf",
+  "version": "1.0.0",
+  "description": "An extension to keep children safe from innapropriate content",
+  "action": {
+    "default_popup": "html/safeSurf.html",
+    "default_icon": "icons/itachi.png"
+  },
+  "permissions": ["tabs"]
+}
