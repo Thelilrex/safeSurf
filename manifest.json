@@ -5,12 +5,14 @@
   "description": "An extension to keep children safe from innapropriate content",
   "content_scripts": [
     {
-      "default_icon": "icons/itachi.png",
       "js": ["js/popup.js"],
-      "matches": ["<all_urls>"],
-      "html": ["html/safeSurf.html"]
+      "matches": ["<all_urls>"]
     }
   ],
+  "action": {
+    "default_icon": "icons/itachi.png",
+    "default_popup": "html/safeSurf.html"
+  },
   "permissions": ["webRequest", "tabs"],
   "host_permissions": ["<all_urls>"]
 }
