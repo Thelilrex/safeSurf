@@ -3,9 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>safeSurf</title>
   </head>
   <body>
+    <div>
+      <h1 class="Heading">
+        <em><strong>Welcome</strong></em>
+      </h1>
+    </div>
+    <p>
+      This is where we get to see the stats and you will be needing
+      authorization to add or remove keywords or urls
+    </p>
+    <button class="Signin" id="Signin">Signin</button>
+    <br />
+    <button class="add" id="add" onclick="addURL()">Add</button>
+    <input type="url" id="add_field" hidden />
+    <br />
+    <button class="edit" id="edit">Edit</button>
+    <input type="url" id="edit_field" hidden />
+    <br />
+    <button class="delete" id="delete">Delete</button>
+    <input type="url" id="delete_field" hidden />
     <script src="../js/home.js"></script>
   </body>
 </html>
