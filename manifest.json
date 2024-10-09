@@ -6,13 +6,16 @@
   "content_scripts": [
     {
       "js": ["js/popup.js"],
-      "matches": ["<all_urls>"]
+      "matches": ["*://*/*"]
     }
   ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
   "action": {
     "default_icon": "icons/itachi.png",
     "default_popup": "html/safeSurf.html"
   },
   "permissions": ["webRequest", "tabs"],
-  "host_permissions": ["<all_urls>"]
+  "host_permissions": ["*://*/*"]
 }

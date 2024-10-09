@@ -15,10 +15,6 @@ The main goal is to make parents/guardians stressfree by making internet safe th
 
 ## 1. Laptop or PC:
 
-      - OS: Windows 11 Home Single Language
-      - OS Build: 22631.4249
-      - OS Version: 23H2
-      - Processor: x64-based processor, 11th Gen Intel(R) Core (TM) i5-1135G7 @ 2.40GHz
       - 553 KB storage
 
 ## 2. Browser:
@@ -45,6 +41,13 @@ To enable the safeSurf extension:
 
 # For developers
 
+## Env
+
+    - OS: Windows 11 Home Single Language
+    - OS Build: 22631.4249
+    - OS Version: 23H2
+    - Processor: x64-based processor, 11th Gen Intel(R) Core (TM) i5-1135G7 @ 2.40GHz
+
 ## Languages
 
     1. HTML
@@ -56,8 +59,10 @@ To enable the safeSurf extension:
     1. Manifest - Version 3
     2. VS code:
 
-## Images:
+## Resources:
 
 ![alt text](image.png) -> Logo Icon
 
 ![https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3FKtz5gcxMo2_skXF4EzNb7JWrUXD4h2eQ&s](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3FKtz5gcxMo2_skXF4EzNb7JWrUXD4h2eQ&s) -> Background Image For the Pop up
+
+[https://i.gifer.com/81RA.gif](https://i.gifer.com/81RA.gif) -> blocking gif

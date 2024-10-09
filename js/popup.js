@@ -1,10 +1,25 @@
-let restrict = ["x.com"];
-if (window.location.host.toLowerCase().includes("x.com")) {
-  document.body.innerHTML =
-    "<img src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFidw-FrZFP8uFFYSv5ST1NS1j74NieSJEZA&s' >";
+let restrict = ["x.com", "youtube.com"];
+if (
+  restrict.some((domain) => window.location.host.toLowerCase().includes(domain))
+) {
+  let imgElement = document.createElement("img");
+  imgElement.src = "https://i.gifer.com/81RA.gif";
+  imgElement.alt = "Full Screen GIF";
+  imgElement.style.position = "fixed";
+  imgElement.style.top = "0";
+  imgElement.style.left = "0";
+  imgElement.style.width = "100vw";
+  imgElement.style.height = "100vh";
+  imgElement.style.objectFit = "cover";
+  document.body.innerHTML = "";
+  document.body.appendChild(imgElement);
+  let closeTab = () => {
+    chrome.runtime.sendMessage({ action: "closeTab" });
+  };
+  setTimeout(closeTab, 3000);
 }
 document.addEventListener("DOMContentLoaded", function () {
-  const re_direct_el = document.getElementById("re_direct");
+  let re_direct_el = document.getElementById("re_direct");
   re_direct_el.addEventListener("click", function () {
     chrome.tabs.create({
       url: chrome.runtime.getURL("../html/home.html"),
