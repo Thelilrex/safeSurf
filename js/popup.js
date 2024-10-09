@@ -18,6 +18,7 @@ if (
   };
   setTimeout(closeTab, 3000);
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   let re_direct_el = document.getElementById("re_direct");
   re_direct_el.addEventListener("click", function () {
