@@ -53,6 +53,7 @@ To enable the safeSurf extension:
     1. HTML
     2. CSS
     3. Java Script
+    4. Python
 
 ## Frames, Configurations and Tools
 
