@@ -11,7 +11,7 @@ Web Extension (backgroud action)
 SafeSurf is a web extension that can be used to enable safety measure to protect users from visiting unwanted sites.
 The main goal is to make parents/guardians stressfree by making internet safe their children.
 
-# Requirements
+# Minimum Requirements
 
 ## 1. Laptop or PC:
 
