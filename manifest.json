@@ -10,12 +10,13 @@
     }
   ],
   "background": {
-    "service_worker": "js/background.js"
+    "service_worker": "js/background.js",
+    "persistance": false
   },
   "action": {
     "default_icon": "icons/itachi.png",
     "default_popup": "html/safeSurf.html"
   },
-  "permissions": ["webRequest", "tabs"],
+  "permissions": ["webRequest", "tabs", "declarativeNetRequest", "scripting"],
   "host_permissions": ["*://*/*"]
 }
